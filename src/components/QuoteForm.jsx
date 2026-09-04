@@ -11,6 +11,7 @@ const initial = {
   service: "",
   quantity: "",
   size: "",
+  deliveryLocation: "",
   description: "",
   deadline: "",
 };
@@ -72,6 +73,10 @@ export default function QuoteForm() {
         <label>
           Preferred Deadline
           <input type="text" value={form.deadline} onChange={update("deadline")} placeholder="e.g. within 2 weeks" />
+        </label>
+        <label>
+          Delivery Destination
+          <input type="text" value={form.deliveryLocation} onChange={update("deliveryLocation")} placeholder="e.g. Ibadan, Lagos, UK, Worldwide" />
         </label>
         <label className="quote-form__file">
           Upload Design / File

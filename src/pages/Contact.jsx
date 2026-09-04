@@ -5,6 +5,7 @@ import {
   PiEnvelopeSimpleBold,
   PiMapPinBold,
   PiClockBold,
+  PiGlobeBold,
   PiInstagramLogoBold,
   PiFacebookLogoBold,
   PiTiktokLogoBold,
@@ -28,7 +29,7 @@ export default function Contact() {
       <PageHero
         eyebrow="Contact Us"
         title="Let's talk about your project"
-        description="Reach us directly, or send a detailed quote request below and we'll get back to you."
+        description="Reach us directly or send a quote request below — based in Ibadan, Nigeria, with reliable delivery worldwide."
       />
 
       <section className="section contact-info">
@@ -40,6 +41,7 @@ export default function Contact() {
           <ContactCard icon={<PiWhatsappLogoBold />} label="WhatsApp" value={site.whatsappNumber} href={site.whatsappHref} />
           <ContactCard icon={<PiEnvelopeSimpleBold />} label="Email" value={site.email} href={site.emailHref} />
           <ContactCard icon={<PiMapPinBold />} label="Address" value={site.address} />
+          <ContactCard icon={<PiGlobeBold />} label="Delivery & Shipping" value={site.delivery} />
           <ContactCard icon={<PiClockBold />} label="Business Hours" value={site.businessHours} />
         </div>
 

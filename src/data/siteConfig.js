@@ -9,6 +9,7 @@ export const site = {
   shortName: "Amsolf Prints and Packed",
   tagline: "General Printing, Design, Books, Billboards, Calendars & More",
   location: "Ibadan, Nigeria",
+  delivery: "Worldwide & Nationwide Delivery",
   founder: "Alh. Bello Olaide",
   founderTitle: "Founder & CEO",
   logo: "/logo.jpg",
@@ -50,6 +51,7 @@ export function buildQuoteWhatsAppMessage(form) {
     `Quantity: ${form.quantity || "-"}`,
     `Preferred size: ${form.size || "-"}`,
     `Preferred deadline: ${form.deadline || "-"}`,
+    `Delivery destination: ${form.deliveryLocation || "-"}`,
     "",
     `Project details: ${form.description || "-"}`,
   ];

@@ -47,7 +47,7 @@ export default function Home() {
           >
             <div className="hero__pill">
               <span className="hero__dot" />
-              <span>Professional Printing &amp; Design — Ibadan</span>
+              <span>Based in Ibadan • Delivering Worldwide</span>
             </div>
 
             <h1>
@@ -57,7 +57,7 @@ export default function Home() {
             </h1>
 
             <p>
-              From business cards and flyers to book publishing, large-format billboards, branded packaging and calendars — <strong>Amsolf Prints and Packed</strong> brings your vision to life with quality craftsmanship on every job.
+              From business cards and flyers to book publishing, large-format billboards, branded packaging and calendars — <strong>Amsolf Prints and Packed</strong> brings your vision to life with quality craftsmanship on every job. Based in Ibadan, Nigeria, we deliver nationwide and worldwide.
             </p>
 
             <div className="hero__actions">
@@ -74,10 +74,10 @@ export default function Home() {
                 <span className="hero__trust-check">✓</span> Modern Offset &amp; Digital
               </span>
               <span className="hero__trust-item">
-                <span className="hero__trust-check">✓</span> Books, Billboards &amp; Calendars
+                <span className="hero__trust-check">✓</span> Books, Billboards &amp; Packaging
               </span>
               <span className="hero__trust-item">
-                <span className="hero__trust-check">✓</span> Dependable Fast Delivery
+                <span className="hero__trust-check">✓</span> Worldwide &amp; Nationwide Delivery
               </span>
             </div>
           </motion.div>
@@ -138,7 +138,7 @@ export default function Home() {
           <SectionTitle
             eyebrow="Who We Are"
             title={`An established name in printing and publishing`}
-            description={`${site.companyName} delivers professional graphic design, Qur'an and book printing, branding, and large-format printing for individuals, businesses, schools, organizations and institutions in ${site.location}.`}
+            description={`${site.companyName} delivers professional graphic design, Qur'an and book printing, branding, packaging, and large-format printing for clients across Nigeria and globally — based in Ibadan, delivering worldwide.`}
           />
           {site.stats.length > 0 && (
             <div className="intro__stats">

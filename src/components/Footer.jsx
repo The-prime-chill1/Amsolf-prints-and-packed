@@ -29,8 +29,8 @@ export default function Footer() {
           </Link>
           <p>{site.tagline}</p>
           <p className="footer__desc">
-            Professional graphic design, Qur'an &amp; book printing, branding and large-format
-            printing based in {site.location}.
+            Professional graphic design, Qur'an &amp; book printing, packaging, branding and large-format
+            printing based in Ibadan, Nigeria — delivering nationwide &amp; worldwide.
           </p>
           <div className="footer__social">
             <a href={site.social.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
@@ -48,24 +48,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer__col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/quran-book-printing">Qur'an &amp; Book Printing</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </div>
+        <div className="footer__links-row">
+          <div className="footer__col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
+              <li><Link to="/quran-book-printing">Qur'an &amp; Book Printing</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </div>
 
-        <div className="footer__col">
-          <h3>Services</h3>
-          <ul>
-            {services.slice(0, 6).map((s) => (
-              <li key={s.slug}><Link to="/services">{s.title}</Link></li>
-            ))}
-          </ul>
+          <div className="footer__col">
+            <h3>Services</h3>
+            <ul>
+              {services.slice(0, 6).map((s) => (
+                <li key={s.slug}><Link to="/services">{s.title}</Link></li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="footer__col">

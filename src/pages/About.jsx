@@ -19,7 +19,7 @@ export default function About() {
       <PageHero
         eyebrow="About Us"
         title={`The people behind ${site.shortName}`}
-        description={`A printing and publishing house based in ${site.location}, working across graphic design, Qur'an and book printing, branding and large-format print.`}
+        description={`A printing and packaging powerhouse based in Ibadan, Nigeria, delivering high-grade print solutions to clients nationwide and worldwide.`}
       />
 
       <section className="section about-who">
@@ -31,7 +31,7 @@ export default function About() {
             transition={{ duration: 0.6, ease: [0.22, 0.61, 0.36, 1] }}
           >
             <span className="eyebrow">Who We Are</span>
-            <h2>Delivering excellence in general printing, notebooks, publishing &amp; finishing.</h2>
+            <h2>Delivering excellence in general printing, packaging, publishing &amp; finishing.</h2>
           </motion.div>
           <motion.div
             className="about-who__frame"
@@ -51,8 +51,8 @@ export default function About() {
           <p>
             <strong>{site.founderTitle} {site.founder}</strong> founded{" "}
             {site.companyName} with a passion for quality print and a commitment
-            to serving businesses, institutions and individuals across Nigeria.
-            From humble beginnings to a modern multi-format printing and packaging powerhouse, our focus has always remained on precision, vibrant reproduction, and dependable delivery.
+            to serving businesses, institutions and individuals across Nigeria and globally.
+            Based at our production facility in Ibadan, we combine meticulous craftsmanship with reliable worldwide shipping, delivering finished books, commercial prints, billboards, and branded packaging to clients wherever they are.
           </p>
         </div>
       </section>

@@ -13,7 +13,7 @@ export default function Services() {
       <PageHero
         eyebrow="Our Services"
         title="A complete printing & design service directory"
-        description="Every service we offer, organized by category — from first sketch to finished, bound and delivered print."
+        description="Every service we offer, organized by category — from first sketch to finished, bound and delivered print across Nigeria and worldwide."
       />
 
       <section className="section services-directory">
