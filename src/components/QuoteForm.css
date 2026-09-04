@@ -1,0 +1,100 @@
+.quote-form {
+  background: var(--white);
+  border: 1px solid var(--ink-12);
+  border-radius: var(--radius-md);
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.quote-form__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.quote-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: var(--step-2);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  font-family: var(--font-body);
+  font-size: var(--step-3);
+  font-weight: 400;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--ink-12);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  color: var(--ink);
+  transition: border-color var(--dur-1) var(--ease-print);
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  border-color: var(--oxblood);
+}
+
+.quote-form__full {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: var(--step-2);
+  font-weight: 600;
+}
+
+.quote-form__fileInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px dashed var(--ink-12);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  font-weight: 400;
+  color: var(--ink-70);
+  overflow: hidden;
+}
+
+.quote-form__fileInput svg {
+  color: var(--oxblood);
+  flex-shrink: 0;
+}
+
+.quote-form__fileInput input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.quote-form__note {
+  font-size: var(--step-1);
+  color: var(--ink-70);
+  border-left: 2px solid var(--gold-soft);
+  padding-left: 0.85rem;
+}
+
+.quote-form__sent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--success);
+  font-size: var(--step-2);
+  font-weight: 600;
+}
+
+@media (min-width: 720px) {
+  .quote-form__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

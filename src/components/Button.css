@@ -1,0 +1,91 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-pill);
+  transition:
+    transform var(--dur-1) var(--ease-print),
+    background var(--dur-1) var(--ease-print),
+    color var(--dur-1) var(--ease-print),
+    border-color var(--dur-1) var(--ease-print),
+    box-shadow var(--dur-1) var(--ease-print);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+/* shimmer sweep on hover */
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.18) 50%, transparent 60%);
+  transform: translateX(-120%);
+  transition: transform 0.55s var(--ease-print);
+  pointer-events: none;
+}
+.btn:hover::after { transform: translateX(120%); }
+
+.btn--md { padding: 0.82rem 1.65rem; font-size: var(--step-3); }
+.btn--sm { padding: 0.58rem 1.15rem; font-size: var(--step-2); }
+
+/* Primary */
+.btn--primary {
+  background: var(--grad-oxblood);
+  color: var(--white);
+  border: 1.5px solid var(--oxblood);
+  box-shadow: var(--shadow-sm);
+}
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--shadow-ox);
+}
+
+/* Secondary */
+.btn--secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink-20);
+}
+.btn--secondary:hover {
+  border-color: var(--ink);
+  background: var(--ink-06);
+  transform: translateY(-2px);
+}
+
+/* Ghost */
+.btn--ghost {
+  background: transparent;
+  color: var(--oxblood);
+  border: 1.5px solid transparent;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+.btn--ghost:hover { gap: 0.9em; }
+
+/* On dark */
+.btn--onDark {
+  background: var(--white);
+  color: var(--ink);
+  border: 1.5px solid var(--white);
+  box-shadow: var(--shadow-sm);
+}
+.btn--onDark:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--shadow-gold);
+}
+
+/* Mobile — stretch buttons in action groups */
+@media (max-width: 400px) {
+  .hero__actions .btn,
+  .cta-band__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

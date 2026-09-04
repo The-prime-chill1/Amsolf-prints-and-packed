@@ -1,0 +1,140 @@
+.page-hero {
+  position: relative;
+  background: #080c16;
+  color: var(--paper);
+  overflow: hidden;
+  padding: clamp(6.5rem, 12vw, 8.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 65% 55% at 85% 30%, rgba(37, 99, 235, 0.35) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 40% at 15% 75%, rgba(56, 189, 248, 0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.page-hero__inner {
+  position: relative;
+  max-width: 1120px;
+}
+
+.page-hero__grid {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .page-hero__grid {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+.page-hero__copy {
+  max-width: 680px;
+  flex: 1;
+}
+
+.page-hero h1 {
+  color: var(--paper);
+  font-size: clamp(1.8rem, 5.5vw, 3.5rem);
+  margin-top: 0.9rem;
+  line-height: 1.1;
+}
+
+.page-hero p {
+  margin-top: 1.15rem;
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  color: rgba(246, 241, 231, 0.76);
+  max-width: 58ch;
+}
+
+/* ── Brand Logo Badge in Page Hero ── */
+.page-hero__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.page-hero__badge-frame {
+  width: clamp(105px, 16vw, 140px);
+  height: clamp(105px, 16vw, 140px);
+  border-radius: 28px;
+  background: #060911;
+  border: 2px solid rgba(56, 189, 248, 0.5);
+  box-shadow:
+    0 16px 36px -6px rgba(37, 99, 235, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s var(--ease-bounce), box-shadow 0.35s ease;
+}
+
+.page-hero__badge-frame:hover {
+  transform: scale(1.06) rotate(2deg);
+  box-shadow:
+    0 22px 44px -4px rgba(37, 99, 235, 0.7),
+    0 0 0 1px rgba(56, 189, 248, 0.7);
+}
+
+.page-hero__badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.25);
+  display: block;
+}
+
+.page-hero__badge-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+  text-align: center;
+  max-width: 170px;
+  line-height: 1.4;
+}
+
+.eyebrow--onDark {
+  color: var(--gold-soft);
+}
+
+.eyebrow--onDark::before {
+  background: var(--gold-soft);
+}
+
+.page-hero__mark {
+  position: absolute;
+  color: rgba(246, 241, 231, 0.25);
+  width: 30px;
+  height: 30px;
+}
+
+.page-hero__mark--tl {
+  top: -10px;
+  left: -4px;
+  display: none;
+}
+
+.page-hero__mark--br {
+  bottom: -30px;
+  right: 0;
+}
+
+@media (min-width: 720px) {
+  .page-hero__mark--tl {
+    display: block;
+  }
+}

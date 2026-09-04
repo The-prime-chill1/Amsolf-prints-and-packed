@@ -1,0 +1,24 @@
+.section-title {
+  max-width: 640px;
+  margin-bottom: clamp(2rem, 4vw, 3.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.section-title--center {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: var(--step-7);
+}
+
+.section-title p {
+  color: var(--ink-70);
+  font-size: var(--step-4);
+  max-width: 52ch;
+}

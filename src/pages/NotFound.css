@@ -1,0 +1,33 @@
+.notfound {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+}
+
+.notfound__inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 5rem 0;
+}
+
+.notfound__mark {
+  color: var(--oxblood);
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.notfound__inner h1 {
+  font-size: var(--step-7);
+  max-width: 18ch;
+}
+
+.notfound__inner p {
+  color: var(--ink-70);
+  margin-bottom: 0.75rem;
+}

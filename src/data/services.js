@@ -1,0 +1,128 @@
+export const services = [
+  {
+    slug: "general-printing",
+    title: "General Printing",
+    short: "All your everyday printing needs — flyers, posters, stickers, brochures, business cards and more.",
+    icon: "design",
+    items: ["Flyers", "Posters", "Business Cards", "Brochures", "Stickers", "Letterheads", "Compliment Slips", "Certificates"],
+  },
+  {
+    slug: "book-work-notebooks",
+    title: "Book Work & Notebooks",
+    short: "Custom branded notebooks, jotters, school exercise books, novels, journals, and professional binding.",
+    icon: "book",
+    items: ["Custom Notebooks", "Branded Jotters", "Exercise Books", "Spiral Notebooks", "Hardcover Notebooks", "Novels", "Educational Books", "Journals"],
+  },
+  {
+    slug: "billboard-large-format",
+    title: "Billboard & Large Format",
+    short: "Eye-catching billboards, flex banners, roll-ups, backdrops and outdoor signage.",
+    icon: "banner",
+    items: ["Billboards", "Flex Banners", "Roll-Up Banners", "Backdrops", "Signboards", "Outdoor Posters", "Event Branding"],
+  },
+  {
+    slug: "calendars",
+    title: "Calendars",
+    short: "Custom wall calendars, desk calendars and promotional calendars for businesses and individuals.",
+    icon: "corporate",
+    items: ["Wall Calendars", "Desk Calendars", "Pocket Calendars", "Promotional Calendars", "Branded Calendars", "Bulk Orders"],
+  },
+  {
+    slug: "quran-printing",
+    title: "Qur'an Printing",
+    short: "High-quality Qur'an printing with professional finishing and binding.",
+    icon: "quran",
+    items: ["Multiple Sizes", "Quality Paper Stock", "Custom Cover Options", "Hardcover & Softcover", "Bulk Orders"],
+  },
+  {
+    slug: "corporate-branding",
+    title: "Corporate & Branding",
+    short: "Complete branding and promotional materials for businesses and events.",
+    icon: "branding",
+    items: ["Corporate Branding", "Event Branding", "Packaging", "Promotional Materials", "Logo Design"],
+  },
+  {
+    slug: "publishing",
+    title: "Publishing",
+    short: "Typesetting, book formatting, cover design, printing and finishing.",
+    icon: "publishing",
+    items: ["Typesetting", "Book Formatting", "Cover Design", "Book Printing", "Book Binding"],
+  },
+  {
+    slug: "finishing-binding",
+    title: "Finishing & Binding",
+    short: "Lamination, binding, folding, cutting and other professional finishing services.",
+    icon: "finishing",
+    items: ["Lamination", "Perfect Binding", "Saddle Stitching", "Folding", "Cutting"],
+  },
+];
+
+export const portfolioCategories = [
+  "All",
+  "Notebooks & Books",
+  "General Printing",
+  "Billboards & Banners",
+  "Calendars",
+  "Packaging",
+  "Branding",
+  "Qur'an",
+];
+
+export const portfolioItems = [
+  {
+    id: 1,
+    title: "Executive Hardcover & Printed Books",
+    category: "Notebooks & Books",
+    description: "Premium bound novels, company publications, and stacked hardcover books printed in-house.",
+    image: "/images/book-stack.jpg",
+  },
+  {
+    id: 2,
+    title: "Deluxe Gold-Gilt Qur'an Binding",
+    category: "Qur'an",
+    description: "Handcrafted hardcover Qur'an with embossed royal calligraphy and gold-edged pages.",
+    image: "/images/quran.jpg",
+  },
+  {
+    id: 3,
+    title: "High-Resolution City Billboard & Roll-up",
+    category: "Billboards & Banners",
+    description: "Large format flex banner for outdoor billboard advertising and exhibition banner stands.",
+    image: "/images/billboard.jpg",
+  },
+  {
+    id: 4,
+    title: "Corporate Desk & Wall Calendars",
+    category: "Calendars",
+    description: "Custom spiral desk calendars, wall calendar prints, and luxury presentation packaging.",
+    image: "/images/calendars.jpg",
+  },
+  {
+    id: 5,
+    title: "High-Speed Full-Color Web Offset Printing",
+    category: "General Printing",
+    description: "Continuous roll-fed press production delivering brilliant full-color photographic print quality.",
+    image: "/images/press-rollers.jpg",
+  },
+  {
+    id: 6,
+    title: "Corporate Brochures & Perfect-Bound Booklets",
+    category: "General Printing",
+    description: "Multi-page booklets, saddle-stitched product catalogs, and corporate marketing brochures.",
+    image: "/images/booklet-table.jpg",
+  },
+  {
+    id: 7,
+    title: "Heavy-Duty Multi-Unit Offset Presswork",
+    category: "General Printing",
+    description: "Commercial offset litho print runs for large-volume publications, flyers, and stationery.",
+    image: "/images/offset-press.jpg",
+  },
+  {
+    id: 8,
+    title: "Custom Spiral & Hardcover Notebooks",
+    category: "Notebooks & Books",
+    description: "Custom debossed branded notebooks, student exercise books, and event jotters.",
+    image: "/images/notebooks.jpg",
+  },
+];
