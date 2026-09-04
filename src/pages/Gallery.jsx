@@ -1,21 +1,25 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  PiGearDuotone,
   PiMagnifyingGlassPlusBold,
   PiCheckCircleBold,
   PiArrowRightBold,
   PiWhatsappLogoBold,
-  PiWrenchDuotone,
   PiXBold,
 } from "react-icons/pi";
 import PageHero from "../components/PageHero";
 import SectionTitle from "../components/SectionTitle";
 import Button from "../components/Button";
-import RegisterMark from "../components/RegisterMark";
 import { galleryCategories, galleryItems } from "../data/gallery";
 import { site } from "../data/siteConfig";
 import "./Gallery.css";
+
+function formatSpecKey(key) {
+  return key
+    .replace(/([A-Z])/g, " $1")
+    .replace(/^./, (str) => str.toUpperCase())
+    .trim();
+}
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -39,7 +43,7 @@ export default function Gallery() {
           <SectionTitle
             eyebrow="Equipment Showcase"
             title="Precision Machinery Powering Our Production"
-            description="From single-color offset presses for high-volume bookwork to automated guillotine cutters for surgical trimming accuracy."
+            description="From single-color offset presses for high-volume bookwork to automated guillotine cutters and digital die-cutting for surgical accuracy."
             align="center"
           />
 
@@ -68,7 +72,7 @@ export default function Gallery() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  transition={{ duration: 0.35, delay: index * 0.05 }}
                   className="machine-card"
                   onClick={() => setSelectedMachine(item)}
                 >
@@ -151,13 +155,14 @@ export default function Gallery() {
                       e.target.src = "/images/offset-press.jpg";
                     }}
                   />
-                  <div className="machine-modal__badge">
-                    <PiWrenchDuotone /> Industrial Equipment
-                  </div>
                 </div>
 
                 <div className="machine-modal__content-side">
-                  <span className="eyebrow">{selectedMachine.categoryLabel}</span>
+                  <div className="machine-modal__header-tag">
+                    <span className="eyebrow">{selectedMachine.categoryLabel}</span>
+                    <span className="machine-modal__industrial-pill">Industrial Equipment</span>
+                  </div>
+
                   <h2>{selectedMachine.title}</h2>
                   <p className="machine-modal__subtitle">{selectedMachine.subtitle}</p>
 
@@ -168,7 +173,7 @@ export default function Gallery() {
                         <li key={key}>
                           <PiCheckCircleBold />
                           <span>
-                            <strong className="text-capitalize">{key}:</strong> {val}
+                            <strong>{formatSpecKey(key)}:</strong> {val}
                           </span>
                         </li>
                       ))}
