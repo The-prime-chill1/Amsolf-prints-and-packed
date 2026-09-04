@@ -55,7 +55,9 @@ export default function Footer() {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
+              <li><Link to="/gallery">Equipment Gallery</Link></li>
               <li><Link to="/quran-book-printing">Qur'an &amp; Book Printing</Link></li>
+              <li><Link to="/faq">FAQs</Link></li>
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/privacy">Privacy &amp; Policy</Link></li>
             </ul>
