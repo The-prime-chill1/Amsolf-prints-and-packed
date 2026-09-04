@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import QuranBooks from "./pages/QuranBooks";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 function PageWrap({ children }) {
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/portfolio" element={<PageWrap><Portfolio /></PageWrap>} />
           <Route path="/quran-book-printing" element={<PageWrap><QuranBooks /></PageWrap>} />
           <Route path="/contact" element={<PageWrap><Contact /></PageWrap>} />
+          <Route path="/privacy" element={<PageWrap><PrivacyPolicy /></PageWrap>} />
           <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
         </Routes>
       </AnimatePresence>

@@ -15,6 +15,7 @@ import SectionTitle from "../components/SectionTitle";
 import ServiceCard from "../components/ServiceCard";
 import PortfolioCard from "../components/PortfolioCard";
 import Modal from "../components/Modal";
+import ReviewsSection from "../components/ReviewsSection";
 import RegisterMark from "../components/RegisterMark";
 import CmykDots from "../components/CmykDots";
 import { site } from "../data/siteConfig";
@@ -253,6 +254,9 @@ export default function Home() {
         </div>
       </section>
       <Modal item={modalItem} onClose={() => setModalItem(null)} />
+
+      {/* REVIEWS SECTION */}
+      <ReviewsSection />
 
       {/* CTA BANNER */}
       <section className="cta-band">

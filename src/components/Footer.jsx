@@ -57,6 +57,7 @@ export default function Footer() {
               <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/quran-book-printing">Qur'an &amp; Book Printing</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/privacy">Privacy &amp; Policy</Link></li>
             </ul>
           </div>
 
@@ -84,7 +85,7 @@ export default function Footer() {
       </div>
 
       <div className="shell footer__bottom">
-        <p>© {year} {site.companyName}. All Rights Reserved.</p>
+        <p>© {year} {site.companyName}. All Rights Reserved. • <Link to="/privacy">Privacy &amp; Policy</Link></p>
         <p className="footer__built-by">
           Powered and built by{" "}
           <a
