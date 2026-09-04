@@ -22,13 +22,13 @@ export const site = {
   whatsappHref: "https://wa.me/2348155556909",
   email: "belloolaide08@gmail.com",
   emailHref: "mailto:belloolaide08@gmail.com",
-  address: "No. 1 Lam Ta Ololade Crescent, Adetokun, Eleyele, Ibadan",
+  address: "SW8/1295A Laide Close, Ibadan, Nigeria",
   businessHours: "Mon – Sat: 8:00 AM – 6:00 PM",
 
   social: {
-    instagram: "[INSTAGRAM URL]",
-    facebook: "[FACEBOOK URL]",
-    tiktok: "[TIKTOK URL]",
+    instagram: "https://www.instagram.com",
+    facebook: "https://www.facebook.com/laide.bello.71",
+    tiktok: "https://www.tiktok.com/@belloolaide8",
   },
 
   // Only populated once the client supplies verified figures —
