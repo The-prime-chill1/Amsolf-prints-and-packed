@@ -10,7 +10,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import QuranBooks from "./pages/QuranBooks";
 import Contact from "./pages/Contact";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import SitePolicy from "./pages/SitePolicy";
 import Gallery from "./pages/Gallery";
 import Faq from "./pages/Faq";
 import NotFound from "./pages/NotFound";
@@ -45,7 +45,7 @@ export default function App() {
           <Route path="/gallery" element={<PageWrap><Gallery /></PageWrap>} />
           <Route path="/faq" element={<PageWrap><Faq /></PageWrap>} />
           <Route path="/contact" element={<PageWrap><Contact /></PageWrap>} />
-          <Route path="/privacy" element={<PageWrap><PrivacyPolicy /></PageWrap>} />
+          <Route path="/privacy" element={<PageWrap><SitePolicy /></PageWrap>} />
           <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
         </Routes>
       </AnimatePresence>
