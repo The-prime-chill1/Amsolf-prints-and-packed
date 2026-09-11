@@ -54,6 +54,7 @@ export default function Footer() {
             <ul>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/services">Services</Link></li>
+              <li><Link to="/laide-computers">Laide Computers (Subsidiary)</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/gallery">Equipment Gallery</Link></li>
               <li><Link to="/quran-book-printing">Qur'an &amp; Book Printing</Link></li>

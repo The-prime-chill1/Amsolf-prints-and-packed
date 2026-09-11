@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import SitePolicy from "./pages/SitePolicy";
 import Gallery from "./pages/Gallery";
 import Faq from "./pages/Faq";
+import LaideComputers from "./pages/LaideComputers";
 import NotFound from "./pages/NotFound";
 
 function PageWrap({ children }) {
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/services" element={<PageWrap><Services /></PageWrap>} />
           <Route path="/portfolio" element={<PageWrap><Portfolio /></PageWrap>} />
           <Route path="/quran-book-printing" element={<PageWrap><QuranBooks /></PageWrap>} />
+          <Route path="/laide-computers" element={<PageWrap><LaideComputers /></PageWrap>} />
           <Route path="/gallery" element={<PageWrap><Gallery /></PageWrap>} />
           <Route path="/faq" element={<PageWrap><Faq /></PageWrap>} />
           <Route path="/contact" element={<PageWrap><Contact /></PageWrap>} />

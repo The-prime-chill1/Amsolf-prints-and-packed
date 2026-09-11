@@ -175,6 +175,28 @@
   padding: 0.4rem 0.95rem;
 }
 
+.navbar__link--subsidiary {
+  position: relative;
+}
+
+.navbar__mobile-link-text {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar__mobile-sub-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.18rem 0.5rem;
+  border-radius: 9999px;
+  background: #e0f2fe;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+}
+
 /* ── Desktop CTA Button (Request a Quote) ── */
 .navbar__actions {
   display: none;

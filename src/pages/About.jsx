@@ -1,16 +1,26 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { PiTargetDuotone, PiEyeDuotone, PiHandHeartDuotone, PiSealCheckDuotone } from "react-icons/pi";
+import {
+  PiTargetDuotone,
+  PiEyeDuotone,
+  PiHandHeartDuotone,
+  PiSealCheckDuotone,
+  PiDesktopDuotone,
+  PiArrowRightBold,
+  PiLaptopDuotone,
+  PiFileTextDuotone
+} from "react-icons/pi";
 import PageHero from "../components/PageHero";
 import SectionTitle from "../components/SectionTitle";
-import RegisterMark from "../components/RegisterMark";
+import Button from "../components/Button";
 import { site } from "../data/siteConfig";
 import "./About.css";
 
 const VALUES = [
-  { icon: PiTargetDuotone, title: "Our Mission", body: "[Add the company's mission statement here.]" },
-  { icon: PiEyeDuotone, title: "Our Vision", body: "[Add the company's vision statement here.]" },
-  { icon: PiHandHeartDuotone, title: "Our Values", body: "[Add the company's core values here.]" },
-  { icon: PiSealCheckDuotone, title: "Commitment to Quality", body: "[Add the company's quality commitment here.]" },
+  { icon: PiTargetDuotone, title: "Our Mission", body: "To deliver uncompromising print, packaging, and digital typesetting excellence, empowering authors, enterprises, and institutions worldwide." },
+  { icon: PiEyeDuotone, title: "Our Vision", body: "To be the premier printing and technology conglomerate in Nigeria and West Africa, renowned for precision, reliability, and innovation." },
+  { icon: PiHandHeartDuotone, title: "Our Values", body: "Integrity, craftsmanship, speed, continuous technical innovation, and customer-first service on every project." },
+  { icon: PiSealCheckDuotone, title: "Commitment to Quality", body: "Stringent quality control from digital prepress and paper selection through multi-color presswork and final packaging." },
 ];
 
 export default function About() {
@@ -106,6 +116,47 @@ export default function About() {
                 <span className="about-identity__pill">Packaging</span>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* SUBSIDIARY SHOWCASE: LAIDE COMPUTERS */}
+      <section className="section about-subsidiary">
+        <div className="shell">
+          <div className="about-subsidiary__card">
+            <div className="about-subsidiary__left">
+              <span className="eyebrow">Enterprise Subsidiary</span>
+              <h2>Laide Computers</h2>
+              <p className="about-subsidiary__lead">
+                The Dedicated Technology, Hardware &amp; Digital Prepress Arm of {site.companyName}
+              </p>
+              <p>
+                Under the strategic leadership of <strong>{site.founder}</strong>, <strong>Laide Computers</strong> operates as our specialized subsidiary providing brand-new and grade-A computer systems, authentic accessories, desktop publishing, Arabic/English typesetting, and IT workstations to clients across Nigeria.
+              </p>
+              <div className="about-subsidiary__features">
+                <span><PiLaptopDuotone /> Computer &amp; Laptop Sales</span>
+                <span><PiDesktopDuotone /> Prepress &amp; Design Workstations</span>
+                <span><PiFileTextDuotone /> Book Typesetting &amp; Publishing</span>
+              </div>
+              <div className="about-subsidiary__action">
+                <Button to="/laide-computers" variant="primary" icon={<PiArrowRightBold />}>
+                  Explore Laide Computers
+                </Button>
+              </div>
+            </div>
+            <div className="about-subsidiary__right">
+              <div className="about-subsidiary__stat-box">
+                <PiDesktopDuotone className="about-subsidiary__icon" />
+                <h3>Tech &amp; Hardware Hub</h3>
+                <p>Equipping creative studios, publishing houses, corporate offices and students with dependable computing power.</p>
+                <div className="about-subsidiary__badge-row">
+                  <span className="about-subsidiary__badge">Hardware</span>
+                  <span className="about-subsidiary__badge">Prepress</span>
+                  <span className="about-subsidiary__badge">Typesetting</span>
+                  <span className="about-subsidiary__badge">IT Support</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

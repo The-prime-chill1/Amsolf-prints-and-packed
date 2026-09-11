@@ -10,7 +10,7 @@ export const site = {
   tagline: "General Printing, Design, Books, Billboards, Calendars & More",
   location: "Ibadan, Nigeria",
   delivery: "Worldwide & Nationwide Delivery",
-  founder: "Alh. Bello Olaide",
+  founder: "ASIWAJU Z.A OLAIDE",
   founderTitle: "Founder & CEO",
   logo: "/logo.jpg",
 
@@ -24,6 +24,12 @@ export const site = {
   emailHref: "mailto:belloolaide08@gmail.com",
   address: "SW8/1295A Laide Close, Ibadan, Nigeria",
   businessHours: "Mon – Sat: 8:00 AM – 6:00 PM",
+
+  subsidiary: {
+    name: "Laide Computers",
+    tagline: "Computer Sales, Accessories, Desktop Publishing & IT Solutions",
+    parentRelation: "A Subsidiary of Amsolf Prints and Packed",
+  },
 
   social: {
     instagram: "https://www.instagram.com",

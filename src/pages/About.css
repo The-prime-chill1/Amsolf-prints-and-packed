@@ -241,3 +241,125 @@
   border-radius: 9999px;
 }
 
+/* ── About Subsidiary Showcase ── */
+.about-subsidiary {
+  background: var(--paper-alt);
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.about-subsidiary__card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  box-shadow: var(--shadow-md);
+}
+
+.about-subsidiary__left h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.2rem);
+  color: var(--ink);
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-subsidiary__lead {
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.about-subsidiary__left p {
+  color: var(--ink-70);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.about-subsidiary__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.about-subsidiary__features span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.about-subsidiary__features svg {
+  color: #0284c7;
+  font-size: 1.2rem;
+}
+
+.about-subsidiary__right {
+  display: flex;
+  justify-content: center;
+}
+
+.about-subsidiary__stat-box {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+}
+
+.about-subsidiary__icon {
+  font-size: 2.8rem;
+  color: var(--gold-soft);
+  margin-bottom: 1rem;
+}
+
+.about-subsidiary__stat-box h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+
+.about-subsidiary__stat-box p {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.about-subsidiary__badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+}
+
+.about-subsidiary__badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 860px) {
+  .about-subsidiary__card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+

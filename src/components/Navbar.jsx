@@ -10,6 +10,7 @@ const LINKS = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
+  { label: "Laide Computers", to: "/laide-computers", isSubsidiary: true },
   { label: "Portfolio", to: "/portfolio" },
   { label: "Gallery", to: "/gallery" },
   { label: "Contact", to: "/contact" },
@@ -70,9 +71,11 @@ export default function Navbar() {
             <NavLink
               key={l.to}
               to={l.to}
-              className={({ isActive }) => `navbar__link ${isActive ? "is-active" : ""}`}
+              className={({ isActive }) =>
+                `navbar__link ${isActive ? "is-active" : ""} ${l.isSubsidiary ? "navbar__link--subsidiary" : ""}`
+              }
             >
-              {l.label}
+              <span>{l.label}</span>
             </NavLink>
           ))}
         </nav>
@@ -128,7 +131,12 @@ export default function Navbar() {
                     onClick={() => setMobileOpen(false)}
                     className={({ isActive }) => `navbar__mobile-link ${isActive ? "is-active" : ""}`}
                   >
-                    <span>{l.label}</span>
+                    <div className="navbar__mobile-link-text">
+                      <span>{l.label}</span>
+                      {l.isSubsidiary && (
+                        <span className="navbar__mobile-sub-tag">Subsidiary</span>
+                      )}
+                    </div>
                     <PiArrowRightBold className="navbar__mobile-arrow" />
                   </NavLink>
                 ))}
