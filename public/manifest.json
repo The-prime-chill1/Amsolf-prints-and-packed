@@ -1,0 +1,16 @@
+{
+  "name": "Amsolf Prints and Packed",
+  "short_name": "Amsolf Prints",
+  "description": "General Printing, Design, Books, Billboards, Calendars & Packaging — Ibadan to Worldwide Delivery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0d14",
+  "theme_color": "#0d1b2a",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

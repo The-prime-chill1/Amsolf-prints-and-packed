@@ -13,6 +13,8 @@ export const site = {
   founder: "ASIWAJU Z.A OLAIDE",
   founderTitle: "Founder & CEO",
   logo: "/logo.jpg",
+  domain: "amsolfprintsandpacked.com",
+  siteUrl: "https://www.amsolfprintsandpacked.com",
 
   phone: "+234 815 555 6909",
   phoneHref: "tel:+2348155556909",

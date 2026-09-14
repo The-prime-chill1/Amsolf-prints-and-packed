@@ -15,6 +15,7 @@ import Gallery from "./pages/Gallery";
 import Faq from "./pages/Faq";
 import LaideComputers from "./pages/LaideComputers";
 import NotFound from "./pages/NotFound";
+import { usePageSEO } from "./hooks/usePageSEO";
 
 function PageWrap({ children }) {
   return (
@@ -31,6 +32,7 @@ function PageWrap({ children }) {
 
 export default function App() {
   const location = useLocation();
+  usePageSEO();
 
   return (
     <>
