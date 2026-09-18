@@ -4,54 +4,54 @@ import { site } from "../data/siteConfig";
 
 const pageMeta = {
   "/": {
-    title: "Amsolf Prints and Packed | Printing, Packaging & Books — Ibadan to Worldwide",
+    title: "Amsolf Prints and Packed | Printing & Packaging Ibadan",
     description:
-      "Amsolf Prints and Packed is a premier commercial printing, packaging, and publishing press in Ibadan, Nigeria, delivering worldwide. Specialists in book printing, holy Qur'ans, custom packaging, billboards, and corporate branding.",
+      "Commercial printing, packaging, and book publishing in Ibadan, Nigeria. Holy Qur'an printing, custom boxes, billboards, and worldwide delivery.",
   },
   "/about": {
-    title: "About Us | Amsolf Prints and Packed — Founded by ASIWAJU Z.A OLAIDE",
+    title: "About Us | Amsolf Prints and Packed Ibadan",
     description:
-      "Learn about Amsolf Prints and Packed, our press floor capabilities, our founder ASIWAJU Z.A OLAIDE, and our commitment to world-class print engineering.",
+      "Learn about Amsolf Prints and Packed, our press floor capabilities, founder ASIWAJU Z.A OLAIDE, and world-class print engineering in Ibadan.",
   },
   "/services": {
-    title: "Commercial Printing & Packaging Services | Amsolf Prints and Packed",
+    title: "Printing & Packaging Services | Amsolf Prints",
     description:
-      "Explore our services: multi-color offset lithography, hardcover book binding, Holy Qur'an printing, custom packaging boxes, billboards, and corporate calendars.",
+      "Multi-color offset lithography, book binding, Holy Qur'an printing, custom boxes, billboards, and corporate calendars in Ibadan, Nigeria.",
   },
   "/portfolio": {
-    title: "Client Portfolio & Press Showcase | Amsolf Prints and Packed",
+    title: "Client Portfolio & Showcase | Amsolf Prints",
     description:
-      "Browse our showcase of finished books, Qur'ans, packaging boxes, corporate stationery, and large-format billboard installations.",
+      "Browse our portfolio of printed books, Qur'ans, custom packaging boxes, corporate stationery, and large-format billboards.",
   },
   "/quran-book-printing": {
-    title: "Holy Qur'an & Book Publishing | Amsolf Prints and Packed",
+    title: "Holy Qur'an & Book Publishing | Amsolf Prints",
     description:
-      "Specialized Qur'an printing and publishing services: archival paper, gold and silver foil stamping, leatherette hardcovers, and strict reverence standards.",
+      "Qur'an printing and book publishing: archival paper, gold and silver foil stamping, leatherette hardcovers, and strict reverence.",
   },
   "/laide-computers": {
-    title: "Laide Computers | Subsidiary of Amsolf Prints and Packed",
+    title: "Laide Computers | Laptops & Prepress Solutions",
     description:
-      "Computer sales, brand new and refurbished laptops, IT accessories, desktop publishing, and digital prepress solutions by Laide Computers.",
+      "Laptops, desktop computers, IT accessories, digital prepress formatting, and desktop publishing by Laide Computers in Ibadan.",
   },
   "/gallery": {
-    title: "Production & Press Floor Gallery | Amsolf Prints and Packed",
+    title: "Press Floor & Work Gallery | Amsolf Prints",
     description:
-      "View real-world photos of our high-speed printing presses, book finishing machines, and premium finished packaging boxes.",
+      "Photo gallery of our printing presses, book finishing machinery, and premium custom packaging boxes produced in Ibadan.",
   },
   "/faq": {
-    title: "Frequently Asked Questions (FAQ) | Amsolf Prints and Packed",
+    title: "Frequently Asked Questions | Amsolf Prints",
     description:
-      "Get clear answers about minimum order quantities, artwork file preparation, turnarounds, shipping to UK/US/worldwide, and quote requests.",
+      "Find answers about minimum order quantities, artwork preparation, production timelines, international shipping, and quote requests.",
   },
   "/contact": {
-    title: "Contact Us & Request a Quote | Amsolf Prints and Packed",
+    title: "Contact Us & Request a Quote | Amsolf Prints",
     description:
-      "Get in touch with Amsolf Prints and Packed in Ibadan, Nigeria. Request an instant quote via WhatsApp or phone call for your printing project.",
+      "Contact Amsolf Prints and Packed in Ibadan, Nigeria. Request an instant quote via WhatsApp or phone call for your printing project.",
   },
   "/privacy": {
-    title: "Privacy Policy & Artwork Security | Amsolf Prints and Packed",
+    title: "Privacy & Artwork Policy | Amsolf Prints",
     description:
-      "Read our client privacy guarantee, artwork confidentiality policy, quality assurance terms, and international shipping protocols.",
+      "Read our client confidentiality guarantee, artwork intellectual property protection, quality assurance terms, and shipping policy.",
   },
 };
 
@@ -67,7 +67,7 @@ export function usePageSEO() {
 
   useEffect(() => {
     const meta = pageMeta[location.pathname] || {
-      title: `${site.companyName} | Ibadan to Worldwide Delivery`,
+      title: `${site.companyName} | Printing & Packaging Ibadan`,
       description: site.tagline,
     };
 
