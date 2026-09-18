@@ -16,10 +16,19 @@
     />
     <meta name="author" content="Amsolf Prints and Packed - ASIWAJU Z.A OLAIDE" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://www.amsolfprintsandpacked.com/" />
 
     <!-- Search Engine Verifications -->
+    <!-- Bing & Yahoo Webmaster Verification -->
     <meta name="msvalidate.01" content="58B9B49EDEBF7A6CAED9F303559F8674" />
+
+    <!-- Google Search Console Verification (Replace with your actual verification code from Google Search Console) -->
+    <meta name="google-site-verification" content="google-site-verification-token" />
+
+    <!-- Yandex Webmaster Verification -->
+    <meta name="yandex-verification" content="yandex-verification-token" />
 
     <!-- Geographic & Local Search Meta Tags (Oyo State, Nigeria) -->
     <meta name="geo.region" content="NG-OY" />
@@ -30,13 +39,15 @@
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.amsolfprintsandpacked.com/" />
-    <meta property="og:title" content="Amsolf Prints and Packed | Printing &amp; Packaging — Ibadan to Worldwide" />
+    <meta property="og:title" content="Amsolf Prints and Packed | Printing, Packaging &amp; Books — Ibadan to Worldwide" />
     <meta
       property="og:description"
       content="High-precision commercial printing, holy Qur'an printing, book binding, custom packaging, billboards, and corporate branding. Based in Ibadan, delivering worldwide."
     />
     <meta property="og:site_name" content="Amsolf Prints and Packed" />
     <meta property="og:image" content="https://www.amsolfprintsandpacked.com/logo.jpg" />
+    <meta property="og:image:secure_url" content="https://www.amsolfprintsandpacked.com/logo.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="800" />
     <meta property="og:image:alt" content="Amsolf Prints and Packed Official Logo" />
@@ -44,6 +55,7 @@
 
     <!-- Twitter / X Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.amsolfprintsandpacked.com/" />
     <meta name="twitter:title" content="Amsolf Prints and Packed | Printing &amp; Packaging" />
     <meta
       name="twitter:description"
@@ -51,27 +63,38 @@
     />
     <meta name="twitter:image" content="https://www.amsolfprintsandpacked.com/logo.jpg" />
 
-    <!-- Favicon & PWA Manifest -->
+    <!-- Mobile & PWA Optimization -->
     <link rel="icon" href="/logo.jpg" type="image/jpeg" />
     <link rel="apple-touch-icon" href="/logo.jpg" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#0d1b2a" />
+    <meta name="application-name" content="Amsolf Prints and Packed" />
+    <meta name="apple-mobile-web-app-title" content="Amsolf Prints" />
 
-    <!-- Schema.org JSON-LD Structured Data for Search Engines and AI Overviews -->
+    <!-- Multilingual & Localization Alternates -->
+    <link rel="alternate" hreflang="en" href="https://www.amsolfprintsandpacked.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.amsolfprintsandpacked.com/" />
+
+    <!-- Schema.org JSON-LD Structured Data for Google, Bing, Yahoo & AI Overviews -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "PrintShop",
+            "@type": ["PrintShop", "LocalBusiness", "ProfessionalService"],
             "@id": "https://www.amsolfprintsandpacked.com/#localbusiness",
             "name": "Amsolf Prints and Packed",
-            "alternateName": "Amsolf Prints",
+            "alternateName": ["Amsolf Prints", "Amsolf Prints & Packed Ibadan"],
             "url": "https://www.amsolfprintsandpacked.com",
-            "logo": "https://www.amsolfprintsandpacked.com/logo.jpg",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.amsolfprintsandpacked.com/logo.jpg",
+              "width": 800,
+              "height": 800
+            },
             "image": "https://www.amsolfprintsandpacked.com/logo.jpg",
             "description": "Amsolf Prints and Packed is a leading commercial printing, packaging, and publishing press based in Ibadan, Nigeria, delivering nationwide and worldwide. Specializing in Holy Qur'an & book printing, offset lithography, custom packaging boxes, billboards, calendars, and corporate branding.",
-            "telephone": ["+2348155556909", "+2348033233135"],
+            "telephone": "+2348155556909",
             "email": "belloolaide08@gmail.com",
             "address": {
               "@type": "PostalAddress",
@@ -85,6 +108,7 @@
               "latitude": 7.3775,
               "longitude": 3.9470
             },
+            "hasMap": "https://maps.google.com/?q=SW8/1295A+Laide+Close,+Ibadan,+Nigeria",
             "openingHoursSpecification": [
               {
                 "@type": "OpeningHoursSpecification",
@@ -94,6 +118,8 @@
               }
             ],
             "priceRange": "$$",
+            "currenciesAccepted": "NGN, USD, GBP, EUR",
+            "paymentAccepted": "Cash, Bank Transfer, Card",
             "areaServed": [
               {
                 "@type": "Country",
@@ -102,6 +128,22 @@
               {
                 "@type": "AdministrativeArea",
                 "name": "Worldwide"
+              }
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+2348155556909",
+                "contactType": "customer service",
+                "areaServed": ["NG", "Worldwide"],
+                "availableLanguage": ["English", "Yoruba"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+2348033233135",
+                "contactType": "sales",
+                "areaServed": ["NG", "Worldwide"],
+                "availableLanguage": ["English", "Yoruba"]
               }
             ],
             "sameAs": [
@@ -171,17 +213,106 @@
             "@id": "https://www.amsolfprintsandpacked.com/#website",
             "url": "https://www.amsolfprintsandpacked.com",
             "name": "Amsolf Prints and Packed",
+            "description": "Commercial printing, packaging, and book publishing company in Ibadan, Nigeria.",
             "publisher": {
               "@id": "https://www.amsolfprintsandpacked.com/#localbusiness"
             },
             "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.amsolfprintsandpacked.com/#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.amsolfprintsandpacked.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.amsolfprintsandpacked.com/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Holy Qur'an & Book Printing",
+                "item": "https://www.amsolfprintsandpacked.com/quran-book-printing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Laide Computers",
+                "item": "https://www.amsolfprintsandpacked.com/laide-computers"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Contact Us",
+                "item": "https://www.amsolfprintsandpacked.com/contact"
+              }
+            ]
           }
         ]
       }
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!--
+      Search Engine Crawler Fallback:
+      Search crawlers (Googlebot, Bingbot, Baiduspider, YandexBot, AI bots) that do not execute
+      heavy JavaScript or encounter bandwidth timeouts can immediately crawl full business info and links.
+      When JavaScript runs, React cleanly mounts and replaces this fallback.
+    -->
+    <div id="root">
+      <div style="padding: 2rem; font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 0 auto; line-height: 1.6; color: #1e293b;">
+        <header>
+          <h1>Amsolf Prints and Packed</h1>
+          <p><strong>Premier Commercial Printing, Packaging &amp; Book Publishing — Ibadan to Worldwide Delivery</strong></p>
+          <p>Founded by ASIWAJU Z.A OLAIDE</p>
+        </header>
+
+        <section>
+          <h2>Our Core Printing &amp; Packaging Capabilities</h2>
+          <ul>
+            <li><strong>Holy Qur'an &amp; Book Publishing:</strong> Premium hardcover binding, gold/silver foil stamping, embossing, high-durability scriptures and academic textbooks.</li>
+            <li><strong>Commercial Offset Lithography:</strong> High-volume magazines, brochures, flyers, direct mailers, and business stationery.</li>
+            <li><strong>Custom Packaging &amp; Presentation Boxes:</strong> Rigid luxury boxes, product cartons, custom retail packaging.</li>
+            <li><strong>Large-Format &amp; Billboard Printing:</strong> Out-of-home advertising billboards, roll-up banners, and vehicle branding.</li>
+            <li><strong>Corporate Calendars &amp; Branded Diaries:</strong> Custom desk calendars, wall calendars, and executive notebooks.</li>
+            <li><strong>Laide Computers:</strong> Computer hardware, accessories, digital prepress formatting, and IT solutions.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Explore Pages</h2>
+          <nav>
+            <ul>
+              <li><a href="/about">About Amsolf Prints and Packed</a></li>
+              <li><a href="/services">Printing &amp; Packaging Services</a></li>
+              <li><a href="/quran-book-printing">Holy Qur'an &amp; Book Printing Specialization</a></li>
+              <li><a href="/laide-computers">Laide Computers Subsidiary</a></li>
+              <li><a href="/portfolio">Client Portfolio &amp; Press Showcase</a></li>
+              <li><a href="/gallery">Factory &amp; Press Floor Gallery</a></li>
+              <li><a href="/faq">Frequently Asked Questions</a></li>
+              <li><a href="/contact">Contact &amp; Request an Instant Quote</a></li>
+              <li><a href="/privacy">Privacy Policy &amp; Terms</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section>
+          <h2>Headquarters &amp; Contact Information</h2>
+          <p><strong>Address:</strong> SW8/1295A Laide Close, Ibadan, Oyo State, Nigeria</p>
+          <p><strong>Phone:</strong> +234 815 555 6909 | +234 803 323 3135</p>
+          <p><strong>WhatsApp:</strong> +234 815 555 6909</p>
+          <p><strong>Email:</strong> belloolaide08@gmail.com</p>
+          <p><strong>Business Hours:</strong> Monday – Saturday: 8:00 AM – 6:00 PM</p>
+        </section>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

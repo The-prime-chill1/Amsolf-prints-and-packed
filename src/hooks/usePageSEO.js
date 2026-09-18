@@ -55,6 +55,13 @@ const pageMeta = {
   },
 };
 
+function setOrUpdateMeta(selector, attribute, value) {
+  let element = document.querySelector(selector);
+  if (element) {
+    element.setAttribute(attribute, value);
+  }
+}
+
 export function usePageSEO() {
   const location = useLocation();
 
@@ -64,33 +71,26 @@ export function usePageSEO() {
       description: site.tagline,
     };
 
-    // Update Page Title
+    const baseUrl = site.siteUrl || "https://www.amsolfprintsandpacked.com";
+    const fullUrl = location.pathname === "/" ? `${baseUrl}/` : `${baseUrl}${location.pathname}`;
+
+    // Update Title
     document.title = meta.title;
 
     // Update Meta Description
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", meta.description);
-    }
+    setOrUpdateMeta('meta[name="description"]', "content", meta.description);
 
-    // Update Open Graph Description
-    let ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) {
-      ogDesc.setAttribute("content", meta.description);
-    }
+    // Update Open Graph Tags
+    setOrUpdateMeta('meta[property="og:title"]', "content", meta.title);
+    setOrUpdateMeta('meta[property="og:description"]', "content", meta.description);
+    setOrUpdateMeta('meta[property="og:url"]', "content", fullUrl);
 
-    // Update Open Graph Title
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) {
-      ogTitle.setAttribute("content", meta.title);
-    }
+    // Update Twitter Tags
+    setOrUpdateMeta('meta[name="twitter:title"]', "content", meta.title);
+    setOrUpdateMeta('meta[name="twitter:description"]', "content", meta.description);
+    setOrUpdateMeta('meta[name="twitter:url"]', "content", fullUrl);
 
     // Update Canonical URL
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) {
-      const baseUrl = site.siteUrl || "https://www.amsolfprintsandpacked.com";
-      const fullUrl = location.pathname === "/" ? `${baseUrl}/` : `${baseUrl}${location.pathname}`;
-      canonical.setAttribute("href", fullUrl);
-    }
+    setOrUpdateMeta('link[rel="canonical"]', "href", fullUrl);
   }, [location]);
 }
